@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.InterfazController">
+   <children>
+      <Button fx:id="BtnGestionarOrg" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" onAction="#GestionarOrganizaciones" style="-fx-background-color: silver;" text="✅Gestionar Organización" textAlignment="CENTER">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="31.0" />
+         </font>
+      </Button>
+      <Label layoutX="319.0" layoutY="186.0" prefHeight="32.0" prefWidth="493.0" text="Esta opción permite realizar tres operaciones principales: ">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="215.0" prefHeight="32.0" prefWidth="676.0" text="Crear organización, Modificar organización e Inactivar/Activar organización. ">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnGestionarUsuarios" layoutX="14.0" layoutY="273.0" mnemonicParsing="false" onAction="#GestionarUsuarios" style="-fx-background-color: silver;" text="✅Gestionar Usuarios" textAlignment="CENTER">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="31.0" />
+         </font>
+      </Button>
+      <Label layoutX="271.0" layoutY="273.0" prefHeight="32.0" prefWidth="772.0" text="Esta opción permite la creación de nuevos usuarios (administradores o usuarios del sistema) ">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="305.0" prefHeight="32.0" prefWidth="262.0" text="asociados a una organización.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnGestionarUsuarios1" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#GestionarRecursos" style="-fx-background-color: silver;" text="✅Gestionar Recursos" textAlignment="CENTER">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="31.0" />
+         </font>
+      </Button>
+      <Label layoutX="271.0" layoutY="358.0" prefHeight="32.0" prefWidth="772.0" text="Esta opción estará disponible al acceder a visualizar el detalle de una organización,">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="387.0" prefHeight="32.0" prefWidth="772.0" text="ya que cada organización tendrá sus propios recursos.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <TextField alignment="TOP_CENTER" editable="false" layoutX="208.0" layoutY="8.0" prefHeight="64.0" prefWidth="658.0" style="-fx-background-color: orange;" text="Sistema de Reserva de Recursos Compartidos">
+         <font>
+            <Font name="Cambria Italic" size="33.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="35.0" layoutY="80.0" prefHeight="44.0" prefWidth="972.0" style="-fx-background-color: wheat;" text="Bienvenido a este sistema de opciones para las operaciones respectivas de Recursos Compartidos; ">
+         <font>
+            <Font name="Mongolian Baiti" size="24.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="183.0" layoutY="124.0" prefHeight="44.0" prefWidth="700.0" style="-fx-background-color: wheat;" text="si desea ingresar a las mismas de tan solo un clic en cada una de ellas:">
+         <font>
+            <Font name="Mongolian Baiti" size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BtnGestionarSolicituddePrestamos" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#GestionarSolicituddePrestamos" style="-fx-background-color: silver;" text="✅Gestionar Solictud de Préstamo" textAlignment="CENTER">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="31.0" />
+         </font>
+      </Button>
+      <Label layoutX="387.0" layoutY="445.0" prefHeight="32.0" prefWidth="499.0" text="Al Gestionar una Solicitud de Préstamos se deben ingresar ">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="474.0" prefHeight="32.0" prefWidth="324.0" text="detalles para la reserva de los recursos.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="932.0" prefWidth="1246.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="main.CrearRecursoController">
+   <children>
+      <Button fx:id="BTNCrearRecurso" layoutX="920.0" layoutY="378.0" mnemonicParsing="false" onAction="#crearrecurso" style="-fx-background-color: blue;" text="CREAR RECURSO" textFill="#f2f5f2">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="805.0" layoutY="302.0" prefHeight="24.0" prefWidth="303.0" style="-fx-background-color: ;" text="Al haber concluido el ingreso de datos, ">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="83.0" style="-fx-background-color: ;" text="Para poder crear un recurso para una organización ingresa los datos que se solicitan:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNTimepoMáximo" layoutX="37.0" layoutY="882.0" onAction="#TiempoMáximodelusoRecurso" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="40.0" layoutY="842.0" prefHeight="28.0" prefWidth="517.0" text="➡Ingresar el Tiempo máximo de uso del recurso:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNombreRecepcionRecurso" layoutX="37.0" layoutY="758.0" onAction="#NombredelaPersonaegresoRecurso" prefHeight="25.0" prefWidth="458.0" />
+      <Label layoutX="40.0" layoutY="564.0" prefHeight="28.0" prefWidth="772.0" text="➡¿Requiere confirmación de entrega y recepción del recurso prestado?:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNUsuarioAprobacionRechazo" layoutX="42.0" layoutY="476.0" onAction="#UsuariodeAprobacionyRechazo" prefHeight="25.0" prefWidth="458.0" />
+      <Label layoutX="34.0" layoutY="334.0" prefHeight="28.0" prefWidth="657.0" text="➡¿Requiere de Aprobación este recurso para su prestación?:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNCodigoRecurso" layoutX="49.0" layoutY="283.0" onAction="#CodigoRecurso" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="418.0" layoutY="245.0" prefHeight="28.0" prefWidth="249.0" text="➡Nombre del Recurso:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="239.0" style="-fx-background-color: ;" text="➡Código del Recurso:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="508.0" layoutY="23.0" prefHeight="53.0" prefWidth="231.0" style="-fx-background-color: gray;" text="Crear Recurso" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNombreRecurso" layoutX="418.0" layoutY="283.0" onAction="#NombreRecurso" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="40.0" layoutY="125.0" style="-fx-background-color: ;" text="Ingresa el Nombre de la Organización en la que asignarás el recurso:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNIngresoOrgRecurso" layoutX="40.0" layoutY="184.0" onAction="#IngresoNombreOrganizaciondeAsigaciondelRecurso" prefHeight="25.0" prefWidth="543.0" />
+      <Label layoutX="40.0" layoutY="378.0" style="-fx-background-color: wheat;" text="Respuesta: Si. Ingrese el dato que se solicita:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="420.0" style="-fx-background-color: ;" text="Ingrese el Nombre del Usuario que rechazará o aprobará la Prestacion del Recurso: ">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="443.0" style="-fx-background-color: ;" text="NOTA IMPORTANTE: El usuario debe pertenecer a la organización a la que pertenece el recurso.">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="517.0" style="-fx-background-color: wheat;" text="Respuesta: No. Continue ingresando los datos que se solicitan.">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="609.0" style="-fx-background-color: wheat;" text="Respuesta: Si. Ingrese los datos que se soliciten:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="647.0" style="-fx-background-color: ;" text="Ingrese el Nombre de la persona a quien se le entregará el recurso: ">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNPersonaEntrega" layoutX="36.0" layoutY="683.0" onAction="#NombredelaPersonadelaEntrega" prefHeight="25.0" prefWidth="458.0" />
+      <Label layoutX="40.0" layoutY="721.0" style="-fx-background-color: ;" text="Ingrese el Nombre de la persona que estará a cargo de la recepción del recurso: ">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="805.0" style="-fx-background-color: wheat;" text="Respuesta: No. Continue ingresando los datos que se solicitan.">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="800.0" layoutY="183.0" prefHeight="28.0" prefWidth="430.0" text="➡Ingresar el costo del recurso por hora ">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNCostoHoraRecurso" layoutX="898.0" layoutY="255.0" onAction="#CostoporHoradelRecurso" prefHeight="25.0" prefWidth="235.0" />
+      <Label layoutX="810.0" layoutY="211.0" prefHeight="28.0" prefWidth="430.0" text="si este lo cuenta: ">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="805.0" layoutY="336.0" prefHeight="24.0" prefWidth="441.0" style="-fx-background-color: ;" text="da tan solo un clic en el botón para crear el recurso:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="870.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="main.ModificarUsuarioController">
+   <children>
+      <Button fx:id="BTNCrearUsuarioAdmin" layoutX="236.0" layoutY="569.0" mnemonicParsing="false" onAction="#CrearUsuarioAdministrador" style="-fx-background-color: blue;" text="GUARDAR DATOS MODIFICADOS" textFill="#f2f5f2">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="45.0" layoutY="535.0" style="-fx-background-color: ;" text="pero antes asegúrate que los datos ingresados son correctos.">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="511.0" style="-fx-background-color: ;" text="Al haber concluido el cambio de datos, da tan solo un clic en el botón para guardarlos ">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNDireccionModificacion" layoutX="407.0" layoutY="442.0" onAction="#DireccionModificacion" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="407.0" layoutY="397.0" prefHeight="0.0" prefWidth="167.0" text="Dirección:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNTelefonoModificacion" layoutX="407.0" layoutY="353.0" onAction="#TelefonoModificacion" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="407.0" layoutY="314.0" prefHeight="0.0" prefWidth="167.0" text="Teléfono:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNCorreoElectronicoModificacion" layoutX="407.0" layoutY="267.0" onAction="#CorreoElectronicoModificacion" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="407.0" layoutY="228.0" text="Correo electrónico:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNombreModificacion" layoutX="407.0" layoutY="185.0" onAction="#NombreModificacion" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="407.0" layoutY="150.0" text="Nombre:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNContraseñaModificacion" layoutX="45.0" layoutY="442.0" onAction="#ContraseñaModificacion" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="45.0" layoutY="397.0" text="Contraseña:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNombredelUsuarioModificacion" layoutX="45.0" layoutY="353.0" onAction="#NombredelUsuarioModificacion" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="45.0" layoutY="314.0" text="Nombre del usuario:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNCodigoUsuarioNOMIFICABLE" editable="false" layoutX="45.0" layoutY="185.0" onAction="#CodigoUsuarioNOMODIFACAR" prefHeight="25.0" prefWidth="228.0" text="NO SE PUEDE MODIFICAR" />
+      <Label layoutX="45.0" layoutY="228.0" text="Tipo de usuario:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNTipodeUsuarioModificacion" layoutX="45.0" layoutY="267.0" onAction="#TipodeUsuarioModificacion" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="45.0" layoutY="150.0" text="Código del usuario:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="67.0" text="En las siguientes opciones ingrese los datos que corresponden para modificar el usuario, a excepcion ">
+         <font>
+            <Font name="Baskerville Old Face" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="14.0" style="-fx-background-color: Green;" text="Modificación del Usuario " textFill="WHITE">
+         <font>
+            <Font name="Californian FB" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="93.0" text="del código de usuario; este último no se podrá modificar.">
+         <font>
+            <Font name="Baskerville Old Face" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

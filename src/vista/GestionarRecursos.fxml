@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="1167.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="main.GestionarRecursosController">
+   <children>
+      <Label layoutX="531.0" layoutY="443.0" prefHeight="32.0" prefWidth="477.0" text="Permitirá hacer la Inactivación y Activación del recurso.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="333.0" prefHeight="32.0" prefWidth="746.0" text="Se debe permitir modificar todos los datos del recurso a excepción del código del recurso.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="217.0" prefHeight="32.0" prefWidth="692.0" text="Esta opción creará un recurso asociado a la organización que se haya seleccionado.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="119.0" prefHeight="28.0" prefWidth="1140.0" text="Si desea ingresar a las tres operaciones principales que aparecen en pantalla, de tan solo un clic en cada una de ellas:">
+         <font>
+            <Font name="Calisto MT" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnInactivarActivarRecurso" layoutX="62.0" layoutY="434.0" mnemonicParsing="false" onAction="#InactivarActivarRecurso" style="-fx-background-color: red;" text="✔Inactivar/Activar Recurso" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtnActualizarRecurso" layoutX="62.0" layoutY="324.0" mnemonicParsing="false" onAction="#actualizarrecurso" style="-fx-background-color: red;" text="✔Actualizar Recurso" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <TextField alignment="TOP_CENTER" editable="false" layoutX="367.0" layoutY="41.0" prefHeight="64.0" prefWidth="460.0" style="-fx-background-color: gray;" text="GESTIONAR RECURSO">
+         <font>
+            <Font name="Cambria Italic" size="33.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BtnCrearRecurso" layoutX="62.0" layoutY="208.0" mnemonicParsing="false" onAction="#crearrecurso" style="-fx-background-color: red;" text="✔Crear Recurso" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ElecciónTipoUsuarioController">
+   <children>
+      <Label layoutX="113.0" layoutY="27.0" style="-fx-background-color: Green;" text="Elección del Tipo de Usuario" textFill="WHITE">
+         <font>
+            <Font name="Californian FB" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="89.0" text="En las siguientes opciones selecciona el tipo de usuario que deseas ingresar:">
+         <font>
+            <Font name="Baskerville Old Face" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTNEleccionUsuarioAdmin" layoutX="26.0" layoutY="181.0" mnemonicParsing="false" onAction="#UsuarioAdministrador" style="-fx-background-color: yellow;" text="Usuario Administrador">
+         <font>
+            <Font name="Bodoni MT Condensed" size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTNEleccionUsuarioSistema" layoutX="32.0" layoutY="292.0" mnemonicParsing="false" onAction="#UsuarioSistema" style="-fx-background-color: yellow;" text="Usuario Sistema">
+         <font>
+            <Font name="Bodoni MT Condensed" size="33.0" />
+         </font>
+      </Button>
+      <Label layoutX="282.0" layoutY="189.0" text="Tendrán acceso a todas las opciones">
+         <font>
+            <Font name="Californian FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="213.0" text=" de gestión de la plataforma.">
+         <font>
+            <Font name="Californian FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="300.0" text="Este usuario podrá solicitar ">
+         <font>
+            <Font name="Californian FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="324.0" text="la reserva de uno o varios recursos.">
+         <font>
+            <Font name="Californian FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

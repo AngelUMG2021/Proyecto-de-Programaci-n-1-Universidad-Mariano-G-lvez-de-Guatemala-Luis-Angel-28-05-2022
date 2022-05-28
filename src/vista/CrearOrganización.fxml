@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="864.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.CrearOrganizaciónController">
+   <children>
+      <TextField fx:id="BTNNombreOrg" layoutX="32.0" layoutY="270.0" onAction="#crearorganizacion" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="268.0" layoutY="7.0" prefHeight="53.0" prefWidth="311.0" style="-fx-background-color: red;" text="Crear Organización" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="112.0" style="-fx-background-color: orange;" text="➡Código de la organización:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="215.0" prefHeight="28.0" prefWidth="318.0" style="-fx-background-color: orange;" text="➡Nombre de la organización:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNCodigoOrg" layoutX="32.0" layoutY="164.0" onAction="#crearorganizacion" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="34.0" layoutY="318.0" prefHeight="28.0" prefWidth="140.0" style="-fx-background-color: orange;" text="➡Dirección:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNDireccion" layoutX="37.0" layoutY="376.0" onAction="#crearorganizacion" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="37.0" layoutY="421.0" prefHeight="28.0" prefWidth="249.0" style="-fx-background-color: orange;" text="➡Numero de Teléfono:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNumeroTel" layoutX="33.0" layoutY="468.0" onAction="#crearorganizacion" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="37.0" layoutY="513.0" prefHeight="28.0" prefWidth="231.0" style="-fx-background-color: orange;" text="➡Correo Electrónico:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNCorreoElect" layoutX="37.0" layoutY="561.0" onAction="#crearorganizacion" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="37.0" layoutY="73.0" style="-fx-background-color: ;" text="Para poder crear una organización ingresa los datos que se solicitan:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="609.0" style="-fx-background-color: ;" text="Al haber concluido el ingreso de datos, da tan solo un clic en el botón para crear la organización,">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTNCrearOrganizacion" layoutX="250.0" layoutY="672.0" mnemonicParsing="false" onAction="#crearorganizacion" style="-fx-background-color: blue;" text="CREAR ORGANIZACIÓN" textFill="#f2f5f2">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="37.0" layoutY="633.0" style="-fx-background-color: ;" text="pero antes asegúrate que los datos ingresados son correctos.">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="737.0" style="-fx-background-color: ;" text="Debes de crear/asignar un administrador el cual podrá gestionar recursos y usuarios, ingresa a la ">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="761.0" style="-fx-background-color: ;" text="siguiente opción para poder realizar lo indicado:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTNCrearAsignar" layoutX="284.0" layoutY="792.0" mnemonicParsing="false" onAction="#CREARASIGNAR" style="-fx-background-color: blue;" text="CREAR/ASIGNAR " textFill="#f2f5f2">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

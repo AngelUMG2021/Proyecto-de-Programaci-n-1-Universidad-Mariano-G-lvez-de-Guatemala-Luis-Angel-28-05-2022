@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="1167.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.GestionarUsuariosController">
+   <children>
+      <Label layoutX="27.0" layoutY="110.0" prefHeight="28.0" prefWidth="1140.0" text="Si desea ingresar a las tres operaciones principales que aparecen en pantalla, de tan solo un clic en cada una de ellas:">
+         <font>
+            <Font name="Calisto MT" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnCrearUsuario" layoutX="61.0" layoutY="176.0" mnemonicParsing="false" onAction="#crearusuario" style="-fx-background-color: red;" text="✔Crear Usuario" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtnModificarUsuario" layoutX="61.0" layoutY="285.0" mnemonicParsing="false" onAction="#modificarusuario" style="-fx-background-color: red;" text="✔Modificar Usuario" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtnInactivarUsuario" layoutX="61.0" layoutY="393.0" mnemonicParsing="false" onAction="#InactivarUsuario" style="-fx-background-color: red;" text="✔Inactivar Usuario" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="339.0" layoutY="185.0" prefHeight="32.0" prefWidth="690.0" text="Esta opción permite la creación de nuevos usuarios asignados a una organización.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="294.0" prefHeight="32.0" prefWidth="712.0" text="Permite modificar cualquier dato del usuario a excepción del código del mismo.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="402.0" prefHeight="32.0" prefWidth="522.0" text="Cambia el estado del usuario de activo a inactivo o viceversa.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <TextField alignment="TOP_CENTER" editable="false" layoutX="354.0" layoutY="32.0" prefHeight="64.0" prefWidth="460.0" style="-fx-background-color: gray;" text="GESTIONAR USUARIOS">
+         <font>
+            <Font name="Cambria Italic" size="33.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ModificarOrganizaciónController">
+   <children>
+      <Label layoutX="278.0" layoutY="29.0" prefHeight="53.0" prefWidth="372.0" style="-fx-background-color: red;" text="Modificar Organización" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="101.0" style="-fx-background-color: ;" text="En este espacio puedes modificar algunos datos de la organización, a excepción del nombre y código de la misma. ">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="160.0" prefHeight="28.0" prefWidth="140.0" style="-fx-background-color: orange;" text="➡Dirección:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNDireccionModoficacion" layoutX="25.0" layoutY="214.0" onAction="#modficarorganizacion" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="25.0" layoutY="266.0" prefHeight="28.0" prefWidth="249.0" style="-fx-background-color: orange;" text="➡Numero de Teléfono:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNumeroTel" layoutX="25.0" layoutY="320.0" onAction="#modficarorganizacion" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="25.0" layoutY="374.0" prefHeight="28.0" prefWidth="231.0" style="-fx-background-color: orange;" text="➡Correo Electrónico:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNCorreoElect" layoutX="25.0" layoutY="434.0" onAction="#modficarorganizacion" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="25.0" layoutY="495.0" style="-fx-background-color: ;" text="Al haber concluido el cambio de datos, da tan solo un clic en el botón para poder guardarlos:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTNGuardarDatosModificados" layoutX="264.0" layoutY="534.0" mnemonicParsing="false" onAction="#BTNGuardarDatosModificados" style="-fx-background-color: blue;" text="GUARDAR DATOS MODIFICADOS" textFill="#f2f5f2">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="25.0" layoutY="596.0" style="-fx-background-color: ;" text="Si deseas cambiar el usuario administrador de la organización puedes modificarlo en la siguiente opción:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTNCrearOrganizacion1" layoutX="222.0" layoutY="632.0" mnemonicParsing="false" onAction="#MODIFICARUSUARIOADMINISTRADOR" style="-fx-background-color: blue;" text="MODIFICAR USUARIO ADMINISTRADOR" textFill="#f2f5f2">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="BTNCodigoOrg" editable="false" layoutX="446.0" layoutY="212.0" onAction="#CodigoOrgNOSEPUEDEMODIFICAR" prefHeight="25.0" prefWidth="231.0" text="NO SE PUEDE MODIFICAR" />
+      <Label layoutX="448.0" layoutY="263.0" prefHeight="28.0" prefWidth="318.0" style="-fx-background-color: orange;" text="➡Nombre de la organización:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="160.0" style="-fx-background-color: orange;" text="➡Código de la organización:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNombreOrg" editable="false" layoutX="446.0" layoutY="318.0" onAction="#NombreOrgNOSEPUEDEMODIFICAR" prefHeight="25.0" prefWidth="354.0" text="NO SE PUEDE MODIFICAR" />
+   </children>
+</AnchorPane>

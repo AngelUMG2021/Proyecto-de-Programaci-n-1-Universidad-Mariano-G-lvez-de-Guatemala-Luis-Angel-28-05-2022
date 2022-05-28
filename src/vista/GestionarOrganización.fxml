@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="528.0" prefWidth="1157.0" style="-fx-background-color: peach;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.GestionarOrganizaciónController">
+   <children>
+      <Button fx:id="BtnCrearOrganizacion" layoutX="52.0" layoutY="198.0" mnemonicParsing="false" onAction="#crearorganizacion" style="-fx-background-color: red;" text="✔Crear Organización" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <TextField alignment="TOP_CENTER" editable="false" layoutX="357.0" layoutY="31.0" prefHeight="64.0" prefWidth="460.0" style="-fx-background-color: gray;" text="GESTIONAR ORGANIZACIÓN">
+         <font>
+            <Font name="Cambria Italic" size="33.0" />
+         </font></TextField>
+      <Button fx:id="BtnModificarOrganizacion" layoutX="52.0" layoutY="314.0" mnemonicParsing="false" onAction="#modificarorganizacion" style="-fx-background-color: red;" text="✔Modificar Organización" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="BtnInactivarActivarOrganizacion" layoutX="52.0" layoutY="424.0" mnemonicParsing="false" onAction="#InactivarActivarOrganizacion" style="-fx-background-color: red;" text="✔Inactivar/Activar Organización" textFill="#edf7f6">
+         <font>
+            <Font name="Monospaced Regular" size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="109.0" prefHeight="28.0" prefWidth="1140.0" text="Si desea ingresar a las tres operaciones principales que aparecen en pantalla, de tan solo un clic en cada una de ellas:">
+         <font>
+            <Font name="Calisto MT" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="215.0" prefHeight="32.0" prefWidth="406.0" text="Habilita la creación de una nueva organización.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="306.0" prefHeight="32.0" prefWidth="475.0" text="Permite modificar la información de las organizaciones;">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="433.0" prefHeight="32.0" prefWidth="406.0" text="Permite Inacticar o Activar una organización.">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="339.0" prefHeight="32.0" prefWidth="436.0" text="a excepción del nombre y código de la organización. ">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

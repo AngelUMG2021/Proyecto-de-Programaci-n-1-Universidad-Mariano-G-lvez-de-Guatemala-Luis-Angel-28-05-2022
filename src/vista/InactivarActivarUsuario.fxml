@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.InactivaUsuarioController">
+   <children>
+      <Label layoutX="19.0" layoutY="330.0" style="-fx-background-color: ;" text="Con tan solo un clic seleccione el estado del usuario:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="SelecionInactivo" layoutX="178.0" layoutY="371.0" mnemonicParsing="false" onAction="#EstadoOrg" prefHeight="37.0" prefWidth="164.0" style="-fx-background-color: yellow;" text="Inactivar">
+         <font>
+            <Font name="Cambria" size="27.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SelecionActivo" layoutX="405.0" layoutY="371.0" mnemonicParsing="false" onAction="#EstadoOrg" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: yellow;" text="Activar">
+         <font>
+            <Font name="Cambria" size="27.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="BTNActivoInactivoUsuarioAdminoSistema" layoutX="406.0" layoutY="231.0" onAction="#UsuarioAdminoSistema" prefHeight="25.0" prefWidth="354.0" />
+      <TextField fx:id="BTNInactivoActivoNombreUsuario" layoutX="19.0" layoutY="198.0" onAction="#NombreUsuarioActivoInactivo" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="24.0" layoutY="104.0" style="-fx-background-color: ;" text="Si desea Activar o Desactivar un usuario, realice los siguientes pasos indicados:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNInactivoActivoCodigoUsuario" layoutX="24.0" layoutY="291.0" onAction="#CodigoUsuarioActivoInactivo" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="231.0" layoutY="36.0" style="-fx-background-color: Green;" text="Inactivar/Activar Usuario" textFill="WHITE">
+         <font>
+            <Font name="Californian FB" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="149.0" text="Nombre del Usuario:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="243.0" text="Código del Usuario:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="149.0" text="Indica si el Usuario es Administrador ">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="185.0" text="o Usuario del Sistema:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

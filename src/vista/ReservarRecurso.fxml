@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="753.0" prefWidth="845.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="main.ReservarRecursoController">
+   <children>
+      <Label layoutX="215.0" layoutY="44.0" style="-fx-background-color: Green;" text="Creación Reserva de Recursos" textFill="WHITE">
+         <font>
+            <Font name="Californian FB" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="110.0" text="Los datos a ingresar en el detalle de la reserva son:">
+         <font>
+            <Font name="Baskerville Old Face" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="160.0" text="Nombre de la actividad:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNDescripcionActividad" layoutX="55.0" layoutY="277.0" onAction="#DescripcionActividad" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="55.0" layoutY="238.0" text="Descripción de la actividad:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNNombreActividad" layoutX="55.0" layoutY="195.0" onAction="#NombreActividad" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="55.0" layoutY="324.0" text="Fecha:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNFechaReserva" layoutX="55.0" layoutY="363.0" onAction="#FechaReserva" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="55.0" layoutY="407.0" text="Hora de inicio:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNoraInicioReserva" layoutX="55.0" layoutY="452.0" onAction="#HoradeInicioReserva" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="55.0" layoutY="500.0" prefHeight="0.0" prefWidth="167.0" text="Hora de fin:">
+         <font>
+            <Font name="Calibri Light Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="BTNHoraFinReserva" layoutX="55.0" layoutY="543.0" onAction="#HoraFinReserva" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="22.0" layoutY="615.0" prefHeight="24.0" prefWidth="822.0" style="-fx-background-color: ;" text="Al haber concluido  con la reservación de recursos, da tan solo un clic en el botón para reservar el recurso,">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="645.0" style="-fx-background-color: ;" text="pero antes asegúrate que los datos ingresados son correctos.">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTNGuardarReservaRecursos" layoutX="209.0" layoutY="679.0" mnemonicParsing="false" onAction="#GuardarReservaRecursos" style="-fx-background-color: blue;" text="GUARDAR LA RESERVA DE RECURSOS " textFill="#f2f5f2">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

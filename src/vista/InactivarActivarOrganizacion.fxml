@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="main.InactivarActivarOrganizacionController">
+   <children>
+      <Label layoutX="24.0" layoutY="188.0" prefHeight="28.0" prefWidth="318.0" style="-fx-background-color: orange;" text="➡Nombre de la organización:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="188.0" style="-fx-background-color: orange;" text="➡Código de la organización:">
+         <font>
+            <Font name="Franklin Gothic Demi" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="31.0" prefHeight="53.0" prefWidth="490.0" style="-fx-background-color: red;" text="Inactivar/Activar Organización" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="273.0" style="-fx-background-color: ;" text="Con tan solo un clic seleccione el estado de la Organizacion:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="SelecionInactivo" layoutX="204.0" layoutY="321.0" mnemonicParsing="false" onAction="#EstadoOrg" prefHeight="37.0" prefWidth="164.0" style="-fx-background-color: yellow;" text="Inactivar">
+         <font>
+            <Font name="Cambria" size="27.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SelecionActivo" layoutX="442.0" layoutY="321.0" mnemonicParsing="false" onAction="#EstadoOrg" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: yellow;" text="Activar">
+         <font>
+            <Font name="Cambria" size="27.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="BTNActivoInactivoNombreOrg1" layoutX="405.0" layoutY="232.0" onAction="#InactivarActivarOrganizacion" prefHeight="25.0" prefWidth="354.0" />
+      <TextField fx:id="BTNInactivoActivoNombreOrg" layoutX="24.0" layoutY="232.0" onAction="#InactivarActivarOrganizacion" prefHeight="25.0" prefWidth="354.0" />
+      <Label layoutX="24.0" layoutY="146.0" style="-fx-background-color: ;" text="Ingrese el Nombre y Código de la Organización:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="104.0" style="-fx-background-color: ;" text="Si desea Activar o Desactivar la organización creada, realice los siguientes pasos indicados:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
